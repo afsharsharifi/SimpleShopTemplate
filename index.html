@@ -1,41 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سایت فرئشگاهی</title>
+    <title>سایت فروشگاهی</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <!-- Materilize -->
     <link rel="stylesheet" href="css/materialize/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
         <nav class="nav-wrapper transparent">
             <div class="container">
-                <a href="#" class="brand-logo left">Exort</a>
-                <a href="#" class="sidenav-trigger" data-target="mobile-link"><i class="material-icons">menu</i></a>
+                <a href="#" class="brand-logo left">Company Logo</a>
+                <div class="right hide-on-med-and-down account-btn">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <a href="#">ثبت نام</a>
+                    <span>|</span>
+                    <a href="#">ورود</a>
+                </div>
+
+                <a href="#" class="sidenav-trigger right" data-target="mobile-link"><i
+                        class="material-icons">menu</i></a>
                 <ul class="right navbar hide-on-med-and-down">
-                    <li><a href="#">خانه</a></li>
-                    <li><a href="#">نمونه کارها</a></li>
-                    <li><a href="#">خدمات</a></li>
-                    <li><a href="#">تماس با ما</a></li>
-                    <li><a href="#">درباره ما</a></li>
+                    <li><a href="#"><i class="fa fa-home"></i> خانه</a></li>
+                    <li><a href="#"><i class="fas fa-store-alt"></i> محصولات</a></li>
+                    <li><a href="#"><i class="fa fa-blog"></i> وبلاگ</a></li>
+                    <li><a href="#"><i class="fa fa-phone"></i> تماس با ما</a></li>
+                    <li><a href="#"><i class="fa fa-info"></i> درباره ما</a></li>
                 </ul>
 
                 <ul class="sidenav direction-right" id="mobile-link">
-                    <li><a href="#">خانه</a></li>
-                    <li><a href="#">نمونه کارها</a></li>
-                    <li><a href="#">خدمات</a></li>
-                    <li><a href="#">تماس با ما</a></li>
-                    <li><a href="#">درباره ما</a></li>
+                    <li><a href="#"><i class="fa fa-user"></i> ثبت نام</a></li>
+                    <li><a href="#"><i class="fas fa-sign-in-alt"></i> ورود</a></li>
+                    <li><a href="#"><i class="fa fa-home"></i> خانه</a></li>
+                    <li><a href="#"><i class="fas fa-store-alt"></i> محصولات</a></li>
+                    <li><a href="#"><i class="fa fa-blog"></i> وبلاگ</a></li>
+                    <li><a href="#"><i class="fa fa-phone"></i> تماس با ما</a></li>
+                    <li><a href="#"><i class="fa fa-info"></i> درباره ما</a></li>
                 </ul>
             </div>
         </nav>
+        <div class="header-texts white-text center row">
+            <h1>یک استایل متفاوت رو تجربه کن : )</h1>
+        </div>
     </header>
-    
+
     <!-- JQuery -->
     <script src="js/jquery-3.5.1.js"></script>
     <!-- Materilize -->
@@ -44,7 +63,7 @@
     <script src="css/fontawesome/js/all.js"></script>
 
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('.sidenav').sidenav({
                 edge: 'right'
             });
@@ -56,6 +75,11 @@
             });
             $('.tabs').tabs();
         })
+
+        $(document).ready(function () {
+            $('.slider').slider();
+        });
     </script>
 </body>
+
 </html>

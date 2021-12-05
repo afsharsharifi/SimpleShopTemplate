@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Orbitron';
+    src: url('../fonts/Orbitron/Orbitron-VariableFont_wght.ttf')
+}
+
+@font-face {
+    font-family: 'IranSansDN';
+    src: url('../fonts/IranSansDN/IranSansDN.ttf')
+}
+
+@font-face {
+    font-family: 'Vazir';
+    src: url('../fonts/Vazir/vazir.ttf')
+}
+
+body {
+    direction: rtl;
+    font-family: 'IranSansDN';
+}
+
+nav .brand-logo{
+    position: relative;
+    font-family: 'Orbitron';
+    left: -140px;
+}
+
+nav ul.navbar {
+    display: flex;
+}
+
+.account-btn a:hover{
+    border-bottom: 2px solid white;
+}
+
+header {
+    background-image: url('https://media.gq.com/photos/5a9443175329a30b1ccdfe6d/16:9/w_2560%2Cc_limit/0226-Flex101Blue_3x2.jpg');
+    box-shadow: inset 0 0 0 1000px rgba(6, 22, 250, 0.2);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.header-texts h1{
+    font-size: 400%;
+    margin-top: 25%;
+}
