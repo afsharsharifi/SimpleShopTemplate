@@ -18,7 +18,17 @@ body {
     font-family: 'IranSansDN';
 }
 
-nav .brand-logo{
+.login-body{
+    background-image: url('../images/back-header.jpg');
+    /* box-shadow: inset 0 0 0 1000px rgba(6, 22, 250, 0.2); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    font-family: 'IranSansDN';
+}
+
+nav .brand-logo {
     position: relative;
     font-family: 'Orbitron';
     left: -140px;
@@ -28,12 +38,12 @@ nav ul.navbar {
     display: flex;
 }
 
-.account-btn a:hover{
+.account-btn a:hover {
     border-bottom: 2px solid white;
 }
 
 header {
-    background-image: url('https://media.gq.com/photos/5a9443175329a30b1ccdfe6d/16:9/w_2560%2Cc_limit/0226-Flex101Blue_3x2.jpg');
+    background-image: url('../images/back-header.jpg');
     box-shadow: inset 0 0 0 1000px rgba(6, 22, 250, 0.2);
     background-size: cover;
     background-repeat: no-repeat;
@@ -41,7 +51,27 @@ header {
     height: 100vh;
 }
 
-.header-texts h1{
+.header-texts h1 {
     font-size: 400%;
     margin-top: 25%;
+}
+
+.login-box form{
+    padding: 50px;
+}
+
+.logo-title {
+    font-family: 'Orbitron';
+}
+
+::placeholder {
+    padding-right: 5px;
+}
+
+.card{
+    border-radius: 50px;
+}
+
+.login-with{
+    margin: 50px;
 }
