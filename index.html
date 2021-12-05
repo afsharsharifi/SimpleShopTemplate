@@ -12,10 +12,50 @@
     <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
 </head>
 <body>
+    <header>
+        <nav class="nav-wrapper transparent">
+            <div class="container">
+                <a href="#" class="brand-logo left">Exort</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-link"><i class="material-icons">menu</i></a>
+                <ul class="right navbar hide-on-med-and-down">
+                    <li><a href="#">خانه</a></li>
+                    <li><a href="#">نمونه کارها</a></li>
+                    <li><a href="#">خدمات</a></li>
+                    <li><a href="#">تماس با ما</a></li>
+                    <li><a href="#">درباره ما</a></li>
+                </ul>
+
+                <ul class="sidenav direction-right" id="mobile-link">
+                    <li><a href="#">خانه</a></li>
+                    <li><a href="#">نمونه کارها</a></li>
+                    <li><a href="#">خدمات</a></li>
+                    <li><a href="#">تماس با ما</a></li>
+                    <li><a href="#">درباره ما</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     
+    <!-- JQuery -->
+    <script src="js/jquery-3.5.1.js"></script>
     <!-- Materilize -->
     <script src="css/materialize/js/materialize.min.js"></script>
     <!-- Font Awesome -->
     <script src="css/fontawesome/js/all.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.sidenav').sidenav({
+                edge: 'right'
+            });
+            $('.parallax').parallax();
+            $('.carousel').carousel({
+                // fullWidth: true,
+                // indicators: true
+                padding: false
+            });
+            $('.tabs').tabs();
+        })
+    </script>
 </body>
 </html>
