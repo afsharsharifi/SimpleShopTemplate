@@ -15,7 +15,8 @@
 
 body{
     direction: rtl;
-    background-color: rgb(177, 176, 196);
+    background: rgb(34,87,126);
+    background: linear-gradient(90deg, rgba(34,87,126,1) 0%, rgba(149,209,204,1) 100%);
     font-family: 'IranSansDN';
 }
 
