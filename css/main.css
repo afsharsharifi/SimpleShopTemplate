@@ -73,3 +73,8 @@ blockquote {
 .carousel .card .card-content p {
     color: #999;
 }
+
+
+.td-title{
+    font-weight: bold;
+}
