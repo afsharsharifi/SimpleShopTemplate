@@ -54,7 +54,9 @@ header {
     padding-right: 5px;
     font-family: 'Vazir';
 }
-
+.navbar-bg{
+    background-color: rgb(23 25 77 / 90%) !important;
+}
 .card {
     font-family: 'Vazir';
 }
