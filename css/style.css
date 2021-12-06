@@ -18,16 +18,6 @@ body {
     font-family: 'IranSansDN';
 }
 
-.login-body{
-    background-image: url('../images/back-header.jpg');
-    /* box-shadow: inset 0 0 0 1000px rgba(6, 22, 250, 0.2); */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-    font-family: 'IranSansDN';
-}
-
 nav .brand-logo {
     position: relative;
     font-family: 'Orbitron';
@@ -56,22 +46,18 @@ header {
     margin-top: 25%;
 }
 
-.login-box form{
-    padding: 50px;
-}
 
-.logo-title {
-    font-family: 'Orbitron';
-}
-
-::placeholder {
+.latest-product h5{
+    margin-top: 50px;
+    margin-right: 20px;
+    border-right: 3px solid blue;
     padding-right: 5px;
+    font-family: 'Vazir';
 }
 
-.card{
-    border-radius: 50px;
+.card {
+    font-family: 'Vazir';
 }
-
-.login-with{
-    margin: 50px;
+.card:hover{
+    box-shadow: 20px;
 }

@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Orbitron';
+    src: url('../fonts/Orbitron/Orbitron-VariableFont_wght.ttf')
+}
+
+@font-face {
+    font-family: 'IranSansDN';
+    src: url('../fonts/IranSansDN/IranSansDN.ttf')
+}
+
+@font-face {
+    font-family: 'Vazir';
+    src: url('../fonts/Vazir/vazir.ttf')
+}
+
+body{
+    direction: rtl;
+    background-color: rgb(177, 176, 196);
+    font-family: 'IranSansDN';
+}
+
+.login-box form{
+    padding: 50px;
+}
+
+.logo-title {
+    font-family: 'Orbitron';
+}
+
+::placeholder {
+    padding-right: 5px;
+    font-family: 'IranSansDN';
+}
+
+.card{
+    border-radius: 50px;
+}
+
+.login-with{
+    margin: 50px;
+}
