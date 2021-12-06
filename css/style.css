@@ -63,3 +63,10 @@ header {
 .card:hover{
     box-shadow: 20px;
 }
+
+.map-div{
+    margin-top: 10px;
+}
+.flex{
+    display: flex;
+}

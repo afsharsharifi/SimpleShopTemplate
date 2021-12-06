@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Orbitron';
+    src: url('../fonts/Orbitron/Orbitron-VariableFont_wght.ttf')
+}
+
+@font-face {
+    font-family: 'IranSansDN';
+    src: url('../fonts/IranSansDN/IranSansDN.ttf')
+}
+
+@font-face {
+    font-family: 'Vazir';
+    src: url('../fonts/Vazir/vazir.ttf')
+}
+
+body {
+    direction: rtl;
+    font-family: 'IranSansDN';
+}
+
+nav .brand-logo {
+    position: relative;
+    font-family: 'Orbitron';
+    left: -140px;
+}
+
+nav ul.navbar {
+    display: flex;
+}
+
+.navbar-bg{
+    background-color: rgb(23 25 77 / 90%) !important;
+}
+
+.about-us{
+    margin-top: 100px;
+}
+.about-us div{
+    font-size: 11pt;
+}
+
+.map-on-about{
+    margin-top: 50px;
+}
+
+.flex{
+    display: flex;
+}
+
+.map-div{
+    margin-top: 10px;
+}
