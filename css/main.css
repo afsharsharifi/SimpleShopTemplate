@@ -28,25 +28,48 @@ nav ul.navbar {
     display: flex;
 }
 
-.navbar-bg{
+.navbar-bg {
     background-color: rgb(23 25 77 / 90%) !important;
 }
 
-.about-us{
+.about-us {
     margin-top: 100px;
 }
-.about-us div{
+
+.about-us div {
     font-size: 11pt;
 }
 
-.map-on-about{
+.map-on-about {
     margin-top: 50px;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.map-div{
+.map-div {
     margin-top: 10px;
+}
+
+blockquote {
+    border-right: 5px solid blue;
+    border-left: none;
+    padding-right: 20px;
+}
+
+.carousel {
+    height: 600px;
+}
+
+.carousel .carousel-item {
+    height: 400px;
+}
+
+.carousel .card .card-content {
+    color: #000;
+}
+
+.carousel .card .card-content p {
+    color: #999;
 }
