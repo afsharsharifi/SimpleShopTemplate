@@ -33,7 +33,7 @@ nav ul.navbar {
 }
 
 header {
-    background-image: url('../images/back-header.jpg');
+    background-image: url('../images/background-header.jpg');
     box-shadow: inset 0 0 0 1000px rgba(6, 22, 250, 0.2);
     background-size: cover;
     background-repeat: no-repeat;
