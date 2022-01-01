@@ -23,14 +23,16 @@
             <div class="container">
                 <a href="#" class="brand-logo left">Company Logo</a>
                 <div class="right hide-on-med-and-down account-btn">
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                    <a href="register.html">ثبت نام</a>
-                    <span>|</span>
-                    <a href="login.html">ورود</a>
+                    <?php if (isset($_SESSION['username']) && !empty($_SESSION['username'])) { ?>
+                        <a href="logout.php">خروج</a>
+                    <?php } else { ?>
+                        <a href="login.php">ورود</a>
+                        <span>|</span>
+                        <a href="register.php">ثبت نام</a>
+                    <?php } ?>
                 </div>
 
-                <a href="#" class="sidenav-trigger right" data-target="mobile-link"><i
-                        class="material-icons">menu</i></a>
+                <a href="#" class="sidenav-trigger right" data-target="mobile-link"><i class="material-icons">menu</i></a>
                 <ul class="right navbar hide-on-med-and-down">
                     <li><a href="index.html"><i class="fa fa-home"></i> خانه</a></li>
                     <li><a href="products.html"><i class="fas fa-store-alt"></i> محصولات</a></li>
@@ -71,8 +73,7 @@
                     </div>
                     <div class="card-action">
                         <span>200.000 تومان</span>
-                        <a class="blue-text" href="product-info.html">اطلاعات بیشتر <i
-                                class="fa fa-info-circle"></i></a>
+                        <a class="blue-text" href="product-info.html">اطلاعات بیشتر <i class="fa fa-info-circle"></i></a>
                     </div>
                 </div>
             </div>
@@ -92,8 +93,7 @@
                     </div>
                     <div class="card-action">
                         <span>120.000 تومان</span>
-                        <a class="blue-text" href="product-info.html">اطلاعات بیشتر <i
-                                class="fa fa-info-circle"></i></a>
+                        <a class="blue-text" href="product-info.html">اطلاعات بیشتر <i class="fa fa-info-circle"></i></a>
                     </div>
                 </div>
             </div>
@@ -113,8 +113,7 @@
                     </div>
                     <div class="card-action">
                         <span>80.000 تومان</span>
-                        <a class="blue-text" href="product-info.html">اطلاعات بیشتر <i
-                                class="fa fa-info-circle"></i></a>
+                        <a class="blue-text" href="product-info.html">اطلاعات بیشتر <i class="fa fa-info-circle"></i></a>
                     </div>
                 </div>
             </div>
@@ -134,8 +133,7 @@
                     </div>
                     <div class="card-action">
                         <span>150.000 تومان</span>
-                        <a class="blue-text" href="product-info.html">اطلاعات بیشتر <i
-                                class="fa fa-info-circle"></i></a>
+                        <a class="blue-text" href="product-info.html">اطلاعات بیشتر <i class="fa fa-info-circle"></i></a>
                     </div>
                 </div>
             </div>
@@ -155,8 +153,7 @@
                     </div>
                     <div class="card-action">
                         <span>125.000 تومان</span>
-                        <a class="blue-text" href="product-info.html">اطلاعات بیشتر <i
-                                class="fa fa-info-circle"></i></a>
+                        <a class="blue-text" href="product-info.html">اطلاعات بیشتر <i class="fa fa-info-circle"></i></a>
                     </div>
                 </div>
             </div>
@@ -176,8 +173,7 @@
                     </div>
                     <div class="card-action">
                         <span>75.000 تومان</span>
-                        <a class="blue-text" href="product-info.html">اطلاعات بیشتر <i
-                                class="fa fa-info-circle"></i></a>
+                        <a class="blue-text" href="product-info.html">اطلاعات بیشتر <i class="fa fa-info-circle"></i></a>
                     </div>
                 </div>
             </div>
@@ -197,8 +193,7 @@
                     </div>
                     <div class="card-action">
                         <span>140.000 تومان</span>
-                        <a class="blue-text" href="product-info.html">اطلاعات بیشتر <i
-                                class="fa fa-info-circle"></i></a>
+                        <a class="blue-text" href="product-info.html">اطلاعات بیشتر <i class="fa fa-info-circle"></i></a>
                     </div>
                 </div>
             </div>
@@ -218,8 +213,7 @@
                     </div>
                     <div class="card-action">
                         <span>350.000 تومان</span>
-                        <a class="blue-text" href="product-info.html">اطلاعات بیشتر <i
-                                class="fa fa-info-circle"></i></a>
+                        <a class="blue-text" href="product-info.html">اطلاعات بیشتر <i class="fa fa-info-circle"></i></a>
                     </div>
                 </div>
             </div>
@@ -254,8 +248,7 @@
                     </div>
                     <div class="card-action">
                         <span>200.000 تومان</span>
-                        <a class="blue-text" href="product-info.html">اطلاعات بیشتر <i
-                                class="fa fa-info-circle"></i></a>
+                        <a class="blue-text" href="product-info.html">اطلاعات بیشتر <i class="fa fa-info-circle"></i></a>
                     </div>
                 </div>
             </div>
@@ -275,8 +268,7 @@
                     </div>
                     <div class="card-action">
                         <span>120.000 تومان</span>
-                        <a class="blue-text" href="product-info.html">اطلاعات بیشتر <i
-                                class="fa fa-info-circle"></i></a>
+                        <a class="blue-text" href="product-info.html">اطلاعات بیشتر <i class="fa fa-info-circle"></i></a>
                     </div>
                 </div>
             </div>
@@ -296,8 +288,7 @@
                     </div>
                     <div class="card-action">
                         <span>80.000 تومان</span>
-                        <a class="blue-text" href="product-info.html">اطلاعات بیشتر <i
-                                class="fa fa-info-circle"></i></a>
+                        <a class="blue-text" href="product-info.html">اطلاعات بیشتر <i class="fa fa-info-circle"></i></a>
                     </div>
                 </div>
             </div>
@@ -317,8 +308,7 @@
                     </div>
                     <div class="card-action">
                         <span>150.000 تومان</span>
-                        <a class="blue-text" href="product-info.html">اطلاعات بیشتر <i
-                                class="fa fa-info-circle"></i></a>
+                        <a class="blue-text" href="product-info.html">اطلاعات بیشتر <i class="fa fa-info-circle"></i></a>
                     </div>
                 </div>
             </div>
@@ -338,8 +328,7 @@
                     </div>
                     <div class="card-action">
                         <span>125.000 تومان</span>
-                        <a class="blue-text" href="product-info.html">اطلاعات بیشتر <i
-                                class="fa fa-info-circle"></i></a>
+                        <a class="blue-text" href="product-info.html">اطلاعات بیشتر <i class="fa fa-info-circle"></i></a>
                     </div>
                 </div>
             </div>
@@ -359,8 +348,7 @@
                     </div>
                     <div class="card-action">
                         <span>75.000 تومان</span>
-                        <a class="blue-text" href="product-info.html">اطلاعات بیشتر <i
-                                class="fa fa-info-circle"></i></a>
+                        <a class="blue-text" href="product-info.html">اطلاعات بیشتر <i class="fa fa-info-circle"></i></a>
                     </div>
                 </div>
             </div>
@@ -380,8 +368,7 @@
                     </div>
                     <div class="card-action">
                         <span>140.000 تومان</span>
-                        <a class="blue-text" href="product-info.html">اطلاعات بیشتر <i
-                                class="fa fa-info-circle"></i></a>
+                        <a class="blue-text" href="product-info.html">اطلاعات بیشتر <i class="fa fa-info-circle"></i></a>
                     </div>
                 </div>
             </div>
@@ -401,8 +388,7 @@
                     </div>
                     <div class="card-action">
                         <span>350.000 تومان</span>
-                        <a class="blue-text" href="product-info.html">اطلاعات بیشتر <i
-                                class="fa fa-info-circle"></i></a>
+                        <a class="blue-text" href="product-info.html">اطلاعات بیشتر <i class="fa fa-info-circle"></i></a>
                     </div>
                 </div>
             </div>
@@ -430,9 +416,7 @@
                     </div>
                 </div>
                 <div class="map-div col s12 l9">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6866.57227519263!2d51.38914525245347!3d35.68708212037268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e00ffd184d199%3A0xa72063b774d0658c!2sMeydan-e-Horr%20Metro%20Station!5e0!3m2!1sen!2s!4v1638781575837!5m2!1sen!2s"
-                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6866.57227519263!2d51.38914525245347!3d35.68708212037268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e00ffd184d199%3A0xa72063b774d0658c!2sMeydan-e-Horr%20Metro%20Station!5e0!3m2!1sen!2s!4v1638781575837!5m2!1sen!2s" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
             <div class="row flex">
@@ -494,7 +478,7 @@
     <script src="css/fontawesome/js/all.js"></script>
 
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             $('.sidenav').sidenav({
                 edge: 'right'
             });
@@ -507,7 +491,7 @@
             $('.tabs').tabs();
         })
 
-        $(document).ready(function () {
+        $(document).ready(function() {
             $('.slider').slider();
         });
     </script>

@@ -21,18 +21,47 @@
             <h2 class="logo-title center white-text">Company Logo</h2>
             <div class="col s12 card">
                 <h4 class="center">ورود</h4>
-                <form action="/">
+                <?php
+    require('db.php');
+    session_start();
+    // When form submitted, check and create user session.
+    if (isset($_POST['username'])) {
+        $username = stripslashes($_REQUEST['username']);    // removes backslashes
+        $username = mysqli_real_escape_string($con, $username);
+        $password = stripslashes($_REQUEST['password']);
+        $password = mysqli_real_escape_string($con, $password);
+        // Check user is exist in the database
+        $query    = "SELECT * FROM `users` WHERE username='$username'
+                     AND password='" . md5($password) . "'";
+        $result = mysqli_query($con, $query) or die(mysql_error());
+        $rows = mysqli_num_rows($result);
+        if ($rows == 1) {
+            $_SESSION['username'] = $username;
+            // Redirect to user dashboard page
+            header("Location: dashboard.php");
+        } else {
+            echo "<div class='form'>
+                  <h3>Incorrect Username/password.</h3><br/>
+                  <p class='link'>Click here to <a href='login.php'>Login</a> again.</p>
+                  </div>";
+        }
+    } else {
+?>
+                <form method="post" name="login">
                     <label for="email">ایمیل</label>
-                    <input class="login" type="email" id="email" placeholder="ایمیل" required>
+                    <input name="username" class="login" type="text" id="email" placeholder="ایمیل" required>
                     <br>
                     <label for="password">گذرواژه</label>
-                    <input class="login" type="password" id="password" placeholder="گذرواژه" required>
+                    <input name="password" class="login" type="password" id="password" placeholder="گذرواژه" required>
                     <br>
                     <br>
-                    <button class="btn blue" type="submit"> ورود <i class="fa fa-sign-in-alt"></i></button>
+                    <input type="submit" value="ورود" name="submit" class="btn blue"/>
                 </form>
+                <?php
+    }
+?>
                 <div class="center">
-                    <p></p><a class="grey-text" href="register.html">میخواهم ثبت نام کنم <i class="fa fa-arrow-alt-circle-left"></i></a></p>
+                    <p></p><a class="grey-text" href="register.php">میخواهم ثبت نام کنم <i class="fa fa-arrow-alt-circle-left"></i></a></p>
                     <p><a href="#">فراموشی گذرواژه <i class="fa fa-lock"></i></a></p>
                 </div>
                 <div class="center login-with">
