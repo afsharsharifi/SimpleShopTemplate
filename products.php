@@ -30,6 +30,7 @@
                     <span>|</span>
                     <a href="login.html">ورود</a>
                 </div>
+                <?php echo "";?>
 
                 <a href="#" class="sidenav-trigger right" data-target="mobile-link"><i
                         class="material-icons">menu</i></a>
