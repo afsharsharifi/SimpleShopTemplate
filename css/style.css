@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Orbitron';
+    src: url('../fonts/Orbitron/Orbitron-VariableFont_wght.ttf')
+}
+
+@font-face {
+    font-family: 'IranSansDN';
+    src: url('../fonts/IranSansDN/IranSansDN.ttf')
+}
+
+@font-face {
+    font-family: 'Vazir';
+    src: url('../fonts/Vazir/vazir.ttf')
+}
+
+body {
+    direction: rtl;
+    font-family: 'IranSansDN';
+}
+
+nav .brand-logo {
+    position: relative;
+    font-family: 'Orbitron';
+    left: -140px;
+}
+
+nav ul.navbar {
+    display: flex;
+}
+
+.account-btn a:hover {
+    border-bottom: 2px solid white;
+}
+
+header {
+    background-image: url('../images/background-header.jpg');
+    box-shadow: inset 0 0 0 1000px rgba(6, 22, 250, 0.2);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.header-texts h1 {
+    font-size: 400%;
+    margin-top: 25%;
+}
+
+
+.latest-product h5 {
+    margin-top: 50px;
+    margin-right: 20px;
+    border-right: 3px solid blue;
+    padding-right: 5px;
+    font-family: 'Vazir';
+}
+
+.navbar-bg {
+    background-color: rgb(23 25 77 / 90%) !important;
+}
+
+.card {
+    font-family: 'Vazir';
+}
+
+.card:hover {
+    box-shadow: 20px;
+}
+
+.map-div {
+    margin-top: 10px;
+}
+
+.flex {
+    display: flex;
+}
